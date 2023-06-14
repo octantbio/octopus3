@@ -1,7 +1,5 @@
 ![OCTOPUS logo](/img/octopus-logo.png)
 
-[![pytest-integration](https://github.com/octantbio/octopus/actions/workflows/pytest-integration.yml/badge.svg)](https://github.com/octantbio/octopus/actions/workflows/pytest-integration.yml)
-
 (**O**ptimized **C**loning **T**hrough **O**pen-source **P**ipelined **U**nabridged **S**equencing)
 
 ## Now introducing: OCTOPUS 3.0
