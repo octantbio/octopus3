@@ -9,8 +9,8 @@
 
 ## Getting Started
 
-- [Installation](/docs/Installation.md)
 - [Bench Protocol](/docs/Bench-Protocol.md)
+- [Analysis Pipeline Installation](/docs/Installation.md)
 - [Running the Analysis Pipeline](/docs/Running-the-Analysis-Pipeline.md)
 
 
