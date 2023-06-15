@@ -1,7 +1,7 @@
 **OT-2 Setup**
 ==============
 
-Below gives some overview of the layouts involved. Refer to the [OT-2 script itself](/ot2/octopus3-ot2-pool-purify.py) for more of the specifics, as the comments walk through the steps of the pooling and purification stage. It is recommended to run it [via SSH access to the OT-2](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2). Otherwise, accordingly adjust the variables in the script with a text editor.
+Below gives some overview of the layouts involved. Refer to the [OT-2 script itself](/ot2/octopus3-ot2-pool-purify.py) for more of the protocol specifics, as the comments walk through the steps of the pooling and purification stage. It is recommended to run it [via SSH access to the OT-2](https://support.opentrons.com/s/article/Setting-up-SSH-access-to-your-OT-2) and accordingly adjusting the [labware offset values](https://support.opentrons.com/s/article/How-Labware-Offsets-work-on-the-OT-2) in the script with a text editor. Otherwise, set the `ssh_mode` variable to `False` in the script with a text editor.
 
 The OT-2 assists in the pooling and purification ([step 2.2](/docs/Bench-Protocol.md#22-pooling)) of 96 to 8x96 samples per run. The user is prompted at the beginning to enter the number of plate indexes to process (1 to 8). Each plate-index of samples are pooled and purified separately, with the order following this quadrant convention (A1, A2, B1, B2):
 
@@ -23,7 +23,7 @@ Refer to the [Opentrons Labware Library](https://labware.opentrons.com/?category
 - 1x  NEST 96 Deepwell Plate 2mL
 - 1-2x  Applied Biosystems MicroAmp 384 Well Plate 40 µL (custom labware)
 
-We don't use the API-provided definition (appliedbiosystemsmicroamp_384_wellplate_40ul) for the 384-well plate but instead created a custom labware definition for it that can be found [here](/ot2/appliedbiosystems_384_wellplate_40ul.json).
+We don't use the API-provided definition (appliedbiosystemsmicroamp_384_wellplate_40ul) for the 384-well plate but instead [created a custom labware definition](https://support.opentrons.com/s/article/Using-labware-in-your-protocols) for it that can be found [here](/ot2/appliedbiosystems_384_wellplate_40ul.json).
 
 The 384-well plates we've been using have [catalog number A36931](https://www.thermofisher.com/order/catalog/product/A36931).
 
