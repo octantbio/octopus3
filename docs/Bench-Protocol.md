@@ -23,7 +23,7 @@ The following are just where we happen to source our materials. Some specific pl
 - [seqWell ExpressPlex Library Prep Kit](https://seqwell.com/expressplex-library-prep-kit/) from seqWell
 - [Thermo Fisher EquiPhi29 DNA Polymerase](https://assets.thermofisher.com/TFS-Assets%2FLSG%2Fmanuals%2FMAN0017945_EquiPhi29_DNA_Polymerase_PI.pdf) kit from Thermo Fisher
 - [Illumina MiSeq Reagent Micro Kit v2 (300-cycles)](https://www.illumina.com/products/by-type/sequencing-kits/cluster-gen-sequencing-reagents/miseq-reagent-kit-v2.html) (MS-103-1002) sufficient for up to 8x96 samples
-- [Biosearch 25 mM dNTP set](hhttps://shop.biosearchtech.com/pcr-instruments%2c-reagents-and-consumables/pcr-and-qpcr-reagents/pcr-and-qpcr-enzymes-and-reagents/premixed-dntp-solutions/p/D59104)
+- [Biosearch 25 mM dNTP set](https://shop.biosearchtech.com/pcr-instruments%2c-reagents-and-consumables/pcr-and-qpcr-reagents/pcr-and-qpcr-enzymes-and-reagents/premixed-dntp-solutions/p/D59104)
 - [MCLAB 500 µM Exo Resistant Random Hexamers](https://www.mclab.com/Exo-Resistant-Random-Hexamer.html)
     - We found that having a small amount of random hexamers normalizes against amplification bias of regions of plasmid targeted by the custom RCA primers and increases yield.
 - [IDT 100µM custom RCA primers](/docs/Focused-RCA.md) (OPTIONAL): Your own custom "RCA Primers" mixed equimolarly each at 100uM, designed to bind to a common sequence on your plasmids
