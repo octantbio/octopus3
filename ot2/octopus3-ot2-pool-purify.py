@@ -35,12 +35,13 @@ def run(protocol: protocol_api.ProtocolContext):
     1x  NEST 96 Deepwell Plate 2mL
     """
 
+    ### SPECIFY True if running protocol on OT-2 command line, otherwise False if over app
+    ssh_mode = True
+    
     # the number of plate indexes to process: integer between 1 and 8 inclusive
     number_of_indexes = int(input('Enter number of plate indexes 1 and 8 inclusive: '))
     if number_of_indexes < 1 or number_of_indexes > 8:
         raise Exception("Error: Number of plate indexes must be between 1 and 8 inclusive.")
-    ### specify True if running protocol on OT-2 command line, otherwise False
-    ssh_mode = True
 
     protocol.set_rail_lights(True)
     print(f'** Pooling {str(number_of_indexes)} plates **')
@@ -66,6 +67,7 @@ class OCTOPUS:
             # opentrons 20 ul filtered tips
         tips_20 = protocol.load_labware('opentrons_96_filtertiprack_20ul', '5') 
 
+        ### ADJUST LABWARE OFFSET VALUES if ssh (also later on for other labware)
         if ssh_mode:
             tips_200.set_offset(x=-0.60, y=1.00, z=-0.20)
             tips_20.set_offset(x=0.00, y=1.00, z=-0.10)
@@ -106,6 +108,7 @@ class OCTOPUS:
         self.reaction_plate_1 = self.protocol.load_labware('appliedbiosystems_384_wellplate_40ul', '1', label='Reaction Plate 1 (1-4)')
         self.reaction_plate_2 = self.protocol.load_labware('appliedbiosystems_384_wellplate_40ul', '2', label='Reaction Plate 2 (5-8)')
 
+        ### ADJUST LABWARE OFFSET VALUES if ssh
         SSH_MODE = self.ssh_mode
         if SSH_MODE:
             self.reagent_plate.set_offset(x=0.10, y=1.60, z=0.00)
@@ -157,7 +160,7 @@ class OCTOPUS:
         Takes around 26 minutes for any number of plates.
         """
 
-        ### labware specific to Purify stage
+        ### ADJUST LABWARE OFFSET VALUES if ssh
         SSH_MODE = self.ssh_mode
         if SSH_MODE:
             self.reagent_plate.set_offset(x=0.10, y=1.60, z=0.00)
